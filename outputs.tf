@@ -7,7 +7,7 @@ output "eks_cluster_name" {
 }
 
 output "eks_cluster_certificate_data" {
-  value = aws_eks_cluster.ms-up-running.certificate_authority.0.data
+  value = aws_eks_cluster.ms-up-running.certificate_authority[0].data
 }
 
 output "eks_cluster_endpoint" {
